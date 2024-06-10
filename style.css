@@ -1,0 +1,506 @@
+:root {
+    --primary-color: #1c0b19;
+    --light-primary: #140d4f;
+    --ligthest-color: #4EA699;
+    --secondary-color: #2DD881;
+    --light-secondary: #6FEDB7;
+}
+
+/*Estilo geral*/
+
+h2.titulo {
+    color: #fff;
+    font-size: 34px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: var(--light-secondary);
+    font-size: 34px;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--light-secondary);
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
+    transition: 1.2s;
+    
+}
+
+button:hover,
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px var(--secondary-color);
+    transform: scale(1.05);
+}
+
+/*Estilo cabecalho*/
+
+header {
+    padding: 40px;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #4b6c66;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+header .logo a {
+
+    display: inline;
+    color: var(--light-secondary);
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 40px;
+
+}
+
+/*Estilo do menu mobile*/
+
+.btn-abrir-menu i{
+    color: var(--light-secondary);
+    font-size: 40px;
+    display: none;
+    
+}
+
+.overlay-menu {
+    background-color: rgba(0, 0, 0, 0.699);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display:none;
+    
+}
+
+.menu-mobile {
+    background-color: var(--primary-color);
+    height: 100vh;
+    position: fixed;
+    box-shadow: 0 0 0 0;
+    top: 0;
+    right: 0;
+    z-index: 999999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+    
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile .btn-fechar i{
+    color: var(--light-secondary);
+    font-size: 30px;
+    
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+
+.menu-mobile nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+    
+}
+
+.menu-mobile nav ul li a:hover{
+    color: black;
+    font-weight: 700;
+    background-color: var(--secondary-color);
+    
+}
+
+/*Estilo site*/
+
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: var(--light-secondary);
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site h1 span {
+    color: var(--ligthest-color);
+}
+
+.topo-do-site .txt-topo-site p {
+    color: white;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    width: 400px;
+    height: auto;
+    border-radius: 1200px;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+.img-topo-site a {
+    color: #4b6c66;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+.img-topo-site a:hover {
+    color: var(--secondary-color);
+
+    transform: scale(1.05);
+}
+
+.img-topo-site ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.img-topo-site ul li {
+
+    position: relative;
+    display: inline-block;
+    padding: 40px 5px;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+/* EStilo das especialidades*/
+
+section.Especialidades {
+    padding: 40px 4%;
+
+}
+
+section.Especialidades .flex {
+    gap: 60px;
+}
+
+.Especialidades .especialidades-box {
+    color: white;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: 1.2s;
+
+}
+
+.Especialidades .especialidades-box i {
+    color: var(--ligthest-color);
+    font-size: 70px;
+
+}
+
+.Especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #6fedb68a;
+}
+
+.Especialidades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.Especialidades .especialidades-box p {
+    font-size: 12px;
+
+}
+
+/*Estilo do sobre*/
+
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: #fff;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: var(--light-secondary);
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 30px 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 60%;
+    border: 0;
+    background-color: var(--light-secondary);
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: 0.5s;
+}
+
+.sobre .img-sobre img {
+    border-radius: 30px;
+}
+
+/*Estilo projeto*/
+
+section.portifolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 10px 10px #6fedb613;
+}
+
+.portifolio .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+
+.img-port {
+
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(12, 12, 12, 0.747);
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: 2s;
+}
+
+.overlay:hover {
+    opacity: 100%;
+}
+
+/* ESTILO DO FORMULARIO D CONTATO */
+
+section.formulario {
+    padding: 80px 4%;
+
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: rgb(68, 68, 68);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 300px;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: var(--light-secondary);
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: var(--ligthest-color);
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+@media screen and (max-width: 1020px) {
+
+    /*Classes geral*/
+    .flex {
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    /*Cabecalho mobile*/
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 200px;
+        height: auto;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 34px;
+    }
+
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    /* EStilo das especialidades*/
+
+    section.Especialidades {
+        padding: 40px 8%;
+
+    }
+
+    /*SOBRE*/
+
+    .sobre .img-sobre img {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+    .btn-social{
+        text-align: center;
+    }
+
+    /*portifolio*/
+    section.portifolio {
+        padding: 80px 8%;
+        
+    }
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+
+    }
+
+    .portifolio .flex {
+        gap: 60px;
+    }
+    .btn-abrir-menu i{
+        display: contents;
+    }
+    
+    
+}
